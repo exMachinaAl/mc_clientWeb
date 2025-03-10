@@ -1,0 +1,169 @@
+h1 {
+  text-align: center;
+  position: relative;
+  right: 20px;
+  color: aliceblue;
+  stroke: black;
+}
+
+/*  .navigate-bar {
+    float: left;
+    position: relative;
+    width: 10em;
+    height: 90%;
+    background:rgba(74, 74, 74, 0.512);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin: 30px 20px;
+    border-radius: 15px;
+} */
+
+
+.bot-stay {
+  background: transparent;
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: relative;
+  width: 25em;
+  height: 20em;
+  border: 10px;
+  margin: 10px 10px 10px 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  /*padding: 10px 0px 0px 10px;*/
+}
+
+.bot-stay .bot-container .wrap-config { /* for example bot only*/
+  float: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 75px;
+  width: 182px;
+  border-radius: 20px;
+}
+/* 
+ .bot-stay .bot-container .wrap-config .newP > div {
+    float: left;
+} */
+
+.bot-stay .bot-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/*  .bot-stay div{
+    float: left;
+    position: relative;
+    height: 75px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 20px;
+} */
+
+.bot-stay p {
+  float: left;
+  position: relative;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  left: 20px;
+  top: -10px;
+}
+
+.bot-stay .bot-list .bot-bar {
+  position: relative;
+  top: -20px;
+  height: 15%;
+  width: 100%;
+  border-radius: 0;
+}
+
+.bot-stay .bot-list .bot-bar .health {
+  height: 100%;
+  background-color: tomato;
+  border-radius: 0;
+  border: none;
+}
+
+.bot-stay .bot-list .bot-bar-H {
+  position: relative;
+  top: -20px;
+  height: 15%;
+  width: 85%;
+  border-radius: 0;
+}
+
+.bot-stay .bot-list .bot-bar-H .hunger {
+  /*top: 0,5px;*/
+  height: 100%;
+  background-color: cyan;
+  border-radius: 0;
+  border: none;
+}
+
+.the-viewer-bot {
+  position: relative;
+  float: left;
+  width: 10em;
+  height: 10em;
+}
+
+
+.status-chat {
+    float: left;
+    position: relative;
+    background: rgba(74, 74, 74, 0.512);
+    width: 12.5em;
+    height: 20em;
+    border: 10px rgb(173, 86, 86);
+    margin: 10px 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 40px;
+  }
+  
+  .status-chat h4 {
+    text-align: center;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .status-chat .status-message p {
+    position: relative;
+    left: 5px;
+  }
+  
+  .status-chat .status-scrool {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+
+.toolkit-bot {
+  float: left;
+  position: relative;
+  background: transparent;
+  width: 22em;
+  height: 8em;
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 5px 25px 10px;
+  /* margin-top: -1.0em;*/
+  padding: 10px;
+}
+
+.toolkit-bot button {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 40px;
+  color: aliceblue;
+  background: rgba(39, 39, 39, 0.512);
+  margin: 5px 5px;
+  border-radius: 15px;
+}
