@@ -1,0 +1,27 @@
+.screen-bot-view {
+    float: left;
+    position: relative;
+    background: rgba(74, 74, 74, 0.512);
+    width: 90%;
+    height: 20em;
+    border: 10px rgb(173, 86, 86);
+    margin: 10px 25px;
+    /* padding: ; */
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 40px;
+}
+
+.controller-s { /*kenapa ini gak bisa*/
+    float: left;
+    position: relative;
+    background: rgba(74, 74, 74, 0.512);
+    width: 90%;
+    height: 2em;
+    border: 10px rgb(173, 86, 86);
+    margin: 2px 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 40px;
+}

@@ -1,0 +1,10 @@
+.menu-container {
+  float: left;
+  position: relative;
+  height: 75px;
+  width: 182px;
+  /* background-color: aqua; */
+  border: 1px solid;
+  border-radius: 20px;
+  /* padding: 5px 0; */
+}

@@ -1,0 +1,52 @@
+.bots-available {
+    float: left;
+    position: relative;
+    height: 75px;
+    width: 182px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.bots-available p {
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    left: 20px;
+    top: -10px;
+}
+
+.bots-available .bots-health{
+    float: left;
+    position: relative;
+    top: -25px;
+    height: 15px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid;
+}
+
+.bots-available .bots-health .health {
+    height: 100%;
+    background-color: tomato;
+    border-radius: 0;
+    border: none;
+}
+
+.bots-available .bots-hunger {
+    float: left;
+    position: relative;
+    top: -25px;
+    height: 15%;
+    width: 85%;
+    border-radius: 0;
+    border: 1px solid;
+}
+
+.bots-available .bots-hunger .hunger {
+    /*top: 0,5px;*/
+    height: 100%;
+    background-color: cyan;
+    border-radius: 0;
+    border: none;
+}

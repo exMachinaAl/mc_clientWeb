@@ -1,0 +1,45 @@
+.test-container {
+  position: relative;
+  /* display: flex; */
+  width: 25rem;
+  height: 20rem;
+  padding-top: 5px;
+  background-color: rgb(114, 208, 125);
+  border-radius: 10px;
+}
+
+.test-container .container-bot {
+  /* display: flex; */
+  /* justify-content: center; */
+  position: relative;
+  width: 12rem;
+  height: 8rem;
+  align-items: center;
+  margin: 50px 25% 60px;
+  padding-left: 5px;
+  background-color: white;
+}
+
+.test-container .container-bot div {
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  /* float: left; */
+}
+
+.test-container .container-bot button {
+  /* display: flex; */
+  /* float: left; */
+  position: relative;
+  margin-left: 10px;
+}
+
+h4 {
+  position: relative;
+  text-align: center;
+}
+
+.add-bot {
+  position: absolute;
+}
+

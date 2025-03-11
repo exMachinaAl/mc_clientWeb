@@ -1,0 +1,40 @@
+.regis-body {
+    background: violet;
+    padding: 15px 30px;
+}
+
+.regis-body input {
+    width: 98%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.regis-body .input-box1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.regis-body .verif-class .regen-code {
+    position: relative;
+    width: 85%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.regis-body .verif-class .button-veriv {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.regis-body .verif-class .verif-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
