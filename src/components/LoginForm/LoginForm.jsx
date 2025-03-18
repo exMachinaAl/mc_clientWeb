@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaUser, FaLock } from "react-icons/fa";
 import Cookies from "js-cookie";
 // import io from 'socket.io-client'
+import { logger } from "../../utils/logger";
 import api from "../../config/axiosCg";
 import "./LoginForm.css";
 import socket from "../../config/socketOnceR";
@@ -20,6 +21,10 @@ const LoginForm = () => {
   // const socket = io("http://localhost:3002");
 
   useEffect(() => {
+
+  }, [])
+
+  useEffect(() => {
     const transfData = async () => {
       // do {
       let timeOfTimeOut;
@@ -34,6 +39,7 @@ const LoginForm = () => {
               await socket.connect();
               if (socket.connected) {
                 console.log("reconnected succesfully");
+                logger.devMode().log("INFO", "reconnect dari socket ke login berhasil")
                 clearTimeout(timeLimiter);
                 clearInterval(timeLimit);
               } else console.log("failed to connected, reconnect..");
@@ -58,6 +64,7 @@ const LoginForm = () => {
           }
         } catch (err) {
           if (err.code === "ERR_NETWORK") {
+            logger.devMode().log("ERROR", "server login mengalami kesalahan, palingan cuma offline")
             console.log("server login sedang offline");
           }
           // console.error("gagal mendapatkan data ", err);
@@ -90,6 +97,17 @@ const LoginForm = () => {
     // } catch (err) {
     //   setLogin(err.response.data);
     // }
+
+    // if (import.meta.env.VITE_REACT_DEV_LOG === "true") {
+    //   console.log("it must be true")
+    // } else {
+    //   console.log("it must be false")
+    // }
+
+    logger.devMode().log("error", "sorry tr=estubnf if it error it must work")
+    // console.log(import.meta.env.VITE_REACT_DEV_TEST)
+    
+    // logger.log("INFO", "click button login and it write in log")
 
     try {
       e.preventDefault();
