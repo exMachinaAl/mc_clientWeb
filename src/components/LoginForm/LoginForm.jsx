@@ -53,7 +53,7 @@ const LoginForm = () => {
           const dataExp = await api.get("/api/clientConnected");
           //setBackData(dataExp.data);
 
-          if (typeof dataExp.data === "object") {
+          if (typeof dataExp.data === "object" || typeof dataExp === "object") {
             setBackData(dataExp.data);
             if (dataExp.data) {
               clearInterval(reconnect);
@@ -67,6 +67,7 @@ const LoginForm = () => {
             logger.devMode().log("ERROR", "server login mengalami kesalahan, palingan cuma offline")
             console.log("server login sedang offline");
           }
+          console.error("the error: " + err)
           // console.error("gagal mendapatkan data ", err);
         }
       }, 1000);
@@ -105,6 +106,7 @@ const LoginForm = () => {
     // }
 
     logger.devMode().log("error", "sorry tr=estubnf if it error it must work")
+    console.log("etst: ", import.meta.env.VITE_SOCKET_IP_APP) // !its not work you need change all .env
     // console.log(import.meta.env.VITE_REACT_DEV_TEST)
     
     // logger.log("INFO", "click button login and it write in log")

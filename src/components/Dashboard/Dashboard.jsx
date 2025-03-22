@@ -75,7 +75,9 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchDashboard = async () => {
-      const res = await fetch("http://localhost:3001/api/dashboard", {
+      const loginGateway = `http://${import.meta.env.VITE_MAIN_SOCKET_IP}:${import.meta.env.VITE_MAIN_APP_PORT}`
+      // const res = await fetch("http://localhost:3001/api/dashboard", {
+      const res = await fetch(`http://${loginGateway}/login/api/dashboard`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });

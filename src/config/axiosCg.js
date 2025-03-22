@@ -3,10 +3,10 @@ import axios from 'axios';
 // require('dotenv').config({ path: require('path').resolve(__dirname, '../../.env')})
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_AXIOS_URL,
+  baseURL: (`http://` + import.meta.env.VITE_MAIN_SOCKET_IP + ":" + `${import.meta.env.VITE_MAIN_APP_PORT}/login`),
 });
 
-if (!api) {
+if (!api) { // YOU NEED TO CHANGE IT FOR LOGICAL NULL
   console.log("gagal exec api");
 } else {
   console.log(api.getUri);
